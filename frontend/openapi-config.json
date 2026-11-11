@@ -1,0 +1,10 @@
+{
+  "schemaFile": "./openapi.json",
+  "apiFile": "./src/shared/api/rtkApi/baseApi.ts",
+  "apiImport": "baseApi",
+  "outputFile": "./src/shared/api/rtkApi/endpoints/timeTrackerApi.ts",
+  "exportName": "timeTrackerApi",
+  "tag": true,
+  "flattenArg": true,
+  "hooks": { "queries": true, "mutations": true, "lazyQueries": true }
+}

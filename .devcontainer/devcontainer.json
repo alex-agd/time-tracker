@@ -1,0 +1,17 @@
+{
+  "name": "time-tracker",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "hostRequirements": {
+    "cpus": 4,
+    "memory": "8gb"
+  },
+  "postStartCommand": "docker compose up -d --build",
+  "forwardPorts": [3000, 8080],
+  "portsAttributes": {
+    "3000": { "label": "Приложение", "onAutoForward": "openBrowser" },
+    "8080": { "label": "API / Swagger", "onAutoForward": "silent" }
+  }
+}
